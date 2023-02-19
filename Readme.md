@@ -30,6 +30,7 @@ git clone https://github.com/Icey-u/HENU-Bachelor-LaTeX-Template.git
 7. 修改目录设置, 设定目录深度, 解决编号问题
 8. 增加参考文献宏包, 默认设定为 GB/T 7714 – 2015, 直接使用 BibTeX 编译即可
 9. 对 cls 做了大量注释, 降低二次更改难度
+10. 去除不必要细节, 减少编译过程中的 Warning
 
 关于具体格式要求, 请参考《本科生论文格式规范要求》
 
