@@ -1,0 +1,75 @@
+% !Mode:: "TeX:UTF-8"
+
+% 请使用 XeLaTeX 编译本文.
+%\documentclass[forprint]{HENU-Bachelor-LaTeX}
+\documentclass{HENU-Bachelor-LaTeX}
+% 选项 forprint: 交付打印时使用, 避免彩色链接字迹打印偏淡. 
+% 注意：一般要求新的章开始于新的奇数页，所以在合适的地方已经设置好空白页，直接双面打印即可！无需更多设置。
+
+\begin{document}
+
+% 下面的内容主要自动产生封面, 按要求修改内容即可.
+
+%\miji{ }                   % 密级, 没有就空着.
+\Year{2023}                 % 毕业年份
+%-------------------------中文封面 --------------------------------------%
+\title{河南大学毕业论文 \LaTeX 模板}            % 题目
+\author{Icey}                     % 姓名
+\StudentNumber{\href{https://www.icey.one}{Icey One}}        % 学号
+\Cschoolname{数学与统计学院}        % 学院名
+\Cmajor{数学与应用数学}             % 专业中文名
+\Ctutorname{导师名}                 % 指导教师姓名
+\Ctutortitle{教授}                  % 指导老师职称
+\date{2023 年 5 月 6 日}          % 日期, 要注意和英文日期一致!!
+
+%------------------------------- 英文封面 English Cover --------------------------------------------%
+% 本科无要求
+%\Etitle{A \LaTeX~Thesis Template for Henan University}            % 英文题目
+%\Eauthor{Icey Swan}                                               % 作者英文名
+%\Esupervisor{Prof.~Feng QingYang}                                 % 指导教师英文名 + 职称
+%\Emajor{Instrumentation and Control Engineering}                  % 专业英文名. 
+%\Eschoolname{School of Physics and Electronics}                   % 学院英文名. 
+%\Edate{May, 2020}                                                 % 英文封面日期
+
+%-----------------------------------------------------------------------------
+%\pdfbookmark[0]{封面}{title}         % 封面页加到 pdf 书签
+\maketitle
+%\pagestyle{empty}
+\frontmatter
+\pagenumbering{Roman}            % 正文之前的页码用大写罗马字母编号.
+%----------- 前言 Frontmatte -------%
+\include{includefile/frontmatter}    % 加入中英文摘要.中英文摘要请打开frontmatter.tex文档撰写。
+
+\thispagestyle{empty}
+%\pdfbookmark[0]{目录}{toc}
+\tableofcontents
+\thispagestyle{empty}
+
+\mainmatter % 以下正文
+%------------正文 Mainmatter----------%
+%\newpage
+\include{includefile/Chapter1} 
+\include{includefile/Chapter2} 
+\include{includefile/Chapter3} 
+%\include{includefile/Chapter4}
+%------------ 附录 Appendix ----------%
+\appendix
+%--------- 参考文献 References --------%
+\cleardoublepage\phantomsection
+\bibliographystyle{gbt7714-numerical} % 设定引用文献格式
+
+%----------- 使用 Bib 文件 ------%
+%\addcontentsline{toc}{chapter}{参考文献}
+%\bibliography{references.bib}
+
+%------ 手动添加参考文献------%
+\addcontentsline{toc}{chapter}{参考文献}
+\begin{thebibliography}{99}
+  \bibitem{ref1} 参考文献 1
+  \bibitem{ref2} 参考文献 2
+  \bibitem{ref3} 参考文献 3
+  \bibitem{ref4} 参考文献 4
+\end{thebibliography}
+
+\cleardoublepage
+\end{document}
