@@ -11,7 +11,7 @@ Henan University Bachelor degree paper latex Template
 git clone https://github.com/Icey-u/HENU-Bachelor-LaTeX-Template.git
 ```
 
-通过 GitHub release 页面下载. 
+通过 [GitHub release](https://github.com/Icey-u/HENU-Bachelor-LaTeX-Template/releases) 页面下载. 
 
 ## Usage
 
