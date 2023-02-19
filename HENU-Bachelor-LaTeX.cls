@@ -1,4 +1,4 @@
-% !Mode:: "TeX:UTF-8" 
+% !Mode:: "TeX:UTF-8"  
 % https://github.com/Icey-u/HENU-Bachelor-LaTeX-Template
 %==============================================================================%
 %=                                                                            =%
