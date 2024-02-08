@@ -3,16 +3,6 @@ Henan University Bachelor degree paper latex Template
 
 此为河南大学本科毕业论文 LaTeX 模板, 符合 2023 年数学院最新要求. 
 
-## Download
-
-通过 git 下载
-
-```
-git clone https://github.com/Icey-u/HENU-Bachelor-LaTeX-Template.git
-```
-
-通过 [GitHub release](https://github.com/Icey-u/HENU-Bachelor-LaTeX-Template/releases) 页面下载. 
-
 ## Usage
 
 请使用 XeLaTeX 编译, 参考文献编译方式为 BibTeX. 建议使用分章编译的形式, 将章节放在 `includefile` 文件夹, 图片放在 `figure` 文件夹 . 如非熟练使用 LaTeX, 请勿对 `HENU-Bachelor.cls` 文件做任何改动. 
