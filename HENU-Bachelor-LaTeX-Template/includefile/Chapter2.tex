@@ -1,0 +1,46 @@
+\chapter{字体设置}
+本文档已按照《本科生毕业论文格式规范》设定相应字体\footnote{请确保已安装相关字体}, 如果您需要进行一些改动, 下面是一个很好的例子.    
+\begin{lstlisting}
+    \songti{我想要正文是宋体}
+    \heiti{标题是黑体}
+    \fangsong{页眉是仿宋}
+    \kaishu{参考文献是楷书}
+\end{lstlisting}
+\songti{我想要正文是宋体}, \heiti{标题是黑体}, \fangsong{页眉是仿宋}, \kaishu{参考文献是楷书}.
+\section{字号设置}
+本模板已设定好绝大部分环境的字体字号\footnote{其中「磅值」为 \LaTeX 和 Word 共有的参数, 而「字号」为 Word 中本地化的产物.} 设定. 如定理环境, 标题, 正文字号大小. 基本无需调整. 如需改动, 下面仍然给出一个例子
+
+\begin{lstlisting}
+    \zihao{3}\songti{\bf{三号宋体加粗}}
+    \zihao{-3}\heiti{\bf{小三号黑体加粗}}
+    \zihao{4}\fangsong{\bf{四号仿宋加粗}}
+    \zihao{-4}\kaishu{中文楷体小四}
+\end{lstlisting}
+\zihao{3}\songti{\bf{三号宋体加粗}}
+
+\zihao{-3}\heiti{\bf{小三号黑体加粗}}
+
+\zihao{4}\fangsong{\bf{四号仿宋加粗}}
+
+\zihao{-4}\kaishu{中文楷体小四}
+
+附字号对照表
+\begin{table}[ht]
+    \caption{字号设置}
+    \begin{tabular}{cccc}
+        \hline
+        Command                                 & 字号      & 磅值  & 效果         \\
+        \hline
+        \textbackslash zihao\{0\} 永 English    & 初号字    & 42    & \zihao{0}永 English  \\
+        \textbackslash zihao\{-0\}永 English    & 小初号    & 36    & \zihao{-0}永 English  \\
+        \textbackslash zihao\{1\} 永 English    & 一号字    & 26    & \zihao{1}永 English   \\
+        \textbackslash zihao\{-1\}永 English    & 小一号    & 24    & \zihao{-1}永 English  \\
+        \textbackslash zihao\{2\} 永 English    & 二号字    & 22    & \zihao{2}永 English   \\
+        \textbackslash zihao\{-2\}永 English    & 小二号    & 18    & \zihao{-2}永 English  \\
+        \textbackslash zihao\{3\} 永 English    & 三号字    & 16    & \zihao{3}永 English   \\
+        \textbackslash zihao\{-3\}永 English    & 小三号    & 15    & \zihao{-3}永 English  \\
+        \textbackslash zihao\{4\} 永 English    & 四号字    & 14    & \zihao{4}永 English   \\
+        \textbackslash zihao\{-4\}永 English    & 小四号    & 12    & \zihao{-4}永 English  \\
+        \hline
+    \end{tabular}
+\end{table}
