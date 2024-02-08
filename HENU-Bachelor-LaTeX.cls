@@ -37,13 +37,7 @@
 %================== 基本信息 ================%
 \newtoks\Year            %毕业年份
 \newtoks\StudentNumber   %学号
-\newtoks\miji            %密级
 \newtoks\Cmajor          %学科专业中文名
-\newtoks\Emajor          %学科专业英文名
-\newtoks\Edate           %英文日期
-\newtoks\Etitle          %英文题目
-\newtoks\Eauthor         %作者英文名
-\newtoks\Esupervisor     %指导教师英文名 + 职称
 \newtoks\Ctutorname      %指导教师中文名
 \newtoks\Ctutortitle     %指导教师职称
 \newtoks\Eschoolname     %学院英文名
@@ -118,7 +112,7 @@
 %------------------------ Abstract & Keywords -------------------------
 \newcommand\cnabstractname{摘要} 
 \newcommand\enabstractname{ABSTRACT}
-\newcommand\cnkeywords[1]{ {\heiti\zihao{4}\cnkeywordsname: }#1} % 去掉原模板的 noindent, 字号改为四号, 以符合河大教务处要求
+\newcommand\cnkeywords[1]{ {\heiti\zihao{4}\cnkeywordsname: }#1} % 去掉原模板的 noindent, 字号改为四号, 以符合教务处要求
 \newcommand\cnkeywordsname{关键词}
 \newcommand\enkeywords[1]{ {\bfseries\zihao{4}\enkeywordsname: }#1} % 去掉原模板的 noindent, 字号改为四号, 以符合河大教务处要求。2019.11.27
 \newcommand\enkeywordsname{Key words}
@@ -293,8 +287,9 @@
 \renewcommand\cftaftertoctitle{\hfill}    
  
 
- % 图片文件路径
-\graphicspath{{figures/}}
+% 图片文件路径
+%或在引用图片时使用软链接, 如 \includegraphics{./figures/picture.png}, 意为插入 figures 文件夹下的 picture.png 文件
+\graphicspath{{figures/}} 
 
 \allowdisplaybreaks
 
